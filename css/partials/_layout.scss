@@ -1,14 +1,21 @@
+@mixin responsive() {
+    @media screen and (max-width:960px) {
+        @content;
+    }
+}
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
-
     padding: 36px 16px;
-
-    overflow: hidden;
-
+    height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    @include responsive(){
+        flex-direction: column;
+    }
 }
 
 .container-item-1 {
@@ -18,8 +25,15 @@
     align-items: flex-start;
 }
 
-.container-item-2 {
+.flex {
+    display: flex;
+}
+.w-auto {
+    width: auto;
+}
 
+.align-items-center {
+    align-items: center;
 }
 
 .spiderman {
