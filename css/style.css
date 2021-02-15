@@ -35,14 +35,12 @@ p {
 }
 
 header {
-  border: 1px solid red;
   width: 100%;
   padding-top: 16px;
 }
 
 .navbar {
   max-width: 1440px;
-  border: 1px solid red;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,14 +116,18 @@ header {
 
 .nav-social svg {
   cursor: pointer;
+  margin-left: 16px;
+  width: 24px;
 }
 
-.nav-social svg path {
+.nav-social svg path, .nav-social svg circle {
   -webkit-transition: .7s ease;
   transition: .7s ease;
 }
 
-.nav-social svg:hover path {
+.nav-social svg:hover path, .nav-social svg:hover circle {
   fill: #F02A2F;
+  -webkit-transform: translate(0, -3, 0);
+          transform: translate(0, -3, 0);
 }
 /*# sourceMappingURL=style.css.map */

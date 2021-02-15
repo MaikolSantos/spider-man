@@ -1,12 +1,10 @@
 header {
-    border: 1px solid red;
     width: 100%;
     padding-top: 16px;
 }
 
 .navbar {
     max-width: 1440px;
-    border: 1px solid red;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -64,14 +62,18 @@ header {
 
     svg {
         cursor: pointer;
+
+        margin-left: 16px;
+        width: 24px;
         
-        path {
+        path, circle {
             transition: .7s ease;
         }
 
         &:hover {
-            path {
+            path, circle {
                 fill: $red-light;
+                transform: translate(0, -3, 0);
             }
         }
     }
