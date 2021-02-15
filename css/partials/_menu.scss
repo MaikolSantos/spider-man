@@ -78,7 +78,7 @@ header {
         &:hover {
             path, circle {
                 fill: $red-light;
-                transform: translate(0, -3, 0);
+                transform: translate(0, -3px, 0);
             }
         }
     }
