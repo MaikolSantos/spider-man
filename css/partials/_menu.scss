@@ -13,6 +13,7 @@ header {
 
 .nav-menu {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -23,6 +24,10 @@ header {
     li {
         margin-left: 24px;
     }
+}
+
+.logo {
+    max-width: 88px;
 }
 
 .nav-link {
