@@ -125,7 +125,7 @@ header {
   transition: .7s ease;
 }
 
-.nav-social svg:hover {
-  fill: #EA1D22;
+.nav-social svg:hover path {
+  fill: #F02A2F;
 }
 /*# sourceMappingURL=style.css.map */
