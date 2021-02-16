@@ -1,9 +1,3 @@
-@mixin responsive() {
-    @media screen and (max-width:960px) {
-        @content;
-    }
-}
-
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -12,9 +6,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    overflow: hidden;
 
     @include responsive(){
         flex-direction: column;
+        height: auto;
     }
 }
 
@@ -23,6 +19,15 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    @include responsive() {
+        order: 2;
+    }
+}
+
+.container-item-2 {
+    @include responsive() {
+        order: 1;
+    }
 }
 
 .flex {
@@ -36,9 +41,18 @@
     align-items: center;
 }
 
+
+
 .spiderman {
-    width: 150%;
-    transform: translate3d(-170px, 0, 0);
+    width: 130%;
+    transform: translate3d(-170px, 00px, 0);
+    z-index: 1;
+
+    @include responsive() {
+
+        width: 100%;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 .btn {
@@ -122,4 +136,32 @@
             width: 100%;
         }
     }
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+
+    width: 100%;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+
+        background: linear-gradient(106.88deg, #0A0C10 26.91%, rgba(10, 12, 16, 0.8) 49.68%, #0A0C10 76.79%);
+    }
+
 }

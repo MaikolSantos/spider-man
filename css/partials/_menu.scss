@@ -24,6 +24,10 @@ header {
     li {
         margin-left: 24px;
     }
+
+    @include responsive(){
+        display: none;
+    }
 }
 
 .logo {
@@ -62,8 +66,21 @@ header {
     }
 }
 
+.bx {
+    display: none;
+
+    @include responsive() {
+        display: block;
+        width: 48px;
+        height: 48px;
+        background-color: $white;
+        border-radius: 8px;
+    }
+}
+
 .nav-social {
     display: flex;
+    
 
     svg {
         cursor: pointer;
@@ -81,5 +98,9 @@ header {
                 transform: translate(0, -3px, 0);
             }
         }
+    }
+
+    @include responsive(){
+        display: none;
     }
 }
