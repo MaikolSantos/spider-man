@@ -21,6 +21,9 @@ body {
     height: 100vh;
     background-color: #0a0c10;
     overflow: hidden;
+    @include responsive(){
+        overflow:scroll;
+    }
 }
 
 img, svg {

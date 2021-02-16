@@ -14,6 +14,12 @@ body {
   overflow: hidden;
 }
 
+@media screen and (max-width: 960px) {
+  body {
+    overflow: scroll;
+  }
+}
+
 img, svg {
   display: block;
   width: 100%;
@@ -111,8 +117,8 @@ p {
 
 .spiderman {
   width: 120%;
-  -webkit-transform: translate3d(-170px, -55px, 0);
-          transform: translate3d(-170px, -55px, 0);
+  -webkit-transform: translate3d(-170px, -50px, 0);
+          transform: translate3d(-170px, -50px, 0);
   z-index: 1;
 }
 
