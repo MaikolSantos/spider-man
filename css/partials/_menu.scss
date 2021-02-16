@@ -95,7 +95,7 @@ header {
         &:hover {
             path, circle {
                 fill: $red-light;
-                transform: translate(0, -3px, 0);
+                transform: translate3d(0, -3px, 0);
             }
         }
     }
